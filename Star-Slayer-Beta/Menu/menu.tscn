@@ -1,0 +1,201 @@
+[gd_scene load_steps=10 format=3 uid="uid://d1hlvatee772x"]
+
+[ext_resource type="Script" path="res://Menu/menu.gd" id="1_yni04"]
+[ext_resource type="FontFile" uid="uid://2jyn7mvk63m3" path="res://Assets/minecraft/Minecraft.ttf" id="3_k5aqp"]
+[ext_resource type="Texture2D" uid="uid://ctdil1ssexqcc" path="res://Assets/Screenshot 2023-10-04 at 12.37-PhotoRoom.png" id="4_qfget"]
+[ext_resource type="Script" path="res://Menu/Settings.gd" id="7_modeh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6wo0y"]
+bg_color = Color(0.0156863, 0.0156863, 0.0156863, 0)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(1, 1, 1, 1)
+shadow_size = 3
+shadow_offset = Vector2(-2, -2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mpqhj"]
+bg_color = Color(0.494118, 0.196078, 0.647059, 0.784314)
+border_width_left = 17
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 15
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color(1, 1, 1, 1)
+shadow_size = 3
+shadow_offset = Vector2(-2, -2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pejs2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n2t0c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_akr7a"]
+bg_color = Color(0.0313726, 0.0313726, 0.0313726, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0.658824, 0.831373, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_top = 9.0
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchor_left = -0.038
+anchor_top = 0.005
+anchor_right = 1.514
+anchor_bottom = 1.586
+offset_left = 98.776
+offset_top = 1.76
+offset_right = -585.128
+offset_bottom = -380.728
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yni04")
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -235.0
+offset_top = -77.0
+offset_right = 397.0
+offset_bottom = 399.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ButtonQUIT" type="Button" parent="."]
+layout_mode = 2
+offset_left = 1000.0
+offset_top = 650.0
+offset_right = 1410.0
+offset_bottom = 801.0
+focus_neighbor_left = NodePath("../ButtonSTART")
+focus_neighbor_right = NodePath("../ButtoOPTIONS")
+theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_k5aqp")
+theme_override_font_sizes/font_size = 150
+theme_override_styles/normal = SubResource("StyleBoxFlat_6wo0y")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mpqhj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pejs2")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_n2t0c")
+theme_override_styles/focus = SubResource("StyleBoxFlat_akr7a")
+text = "EXIT"
+flat = true
+
+[node name="Screenshot2023-10-04At12_37-photoRoom" type="Sprite2D" parent="."]
+position = Vector2(979.184, 336.379)
+scale = Vector2(1.11755, 0.594598)
+texture = ExtResource("4_qfget")
+
+[node name="ButtonSTART" type="Button" parent="."]
+modulate = Color(1.2, 1.2, 1.2, 1)
+layout_mode = 2
+offset_left = 400.0
+offset_top = 650.0
+offset_right = 916.0
+offset_bottom = 801.0
+focus_neighbor_left = NodePath("../ButtoOPTIONS")
+focus_neighbor_right = NodePath("../ButtonQUIT")
+theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_k5aqp")
+theme_override_font_sizes/font_size = 150
+theme_override_styles/normal = SubResource("StyleBoxFlat_6wo0y")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mpqhj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pejs2")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_n2t0c")
+theme_override_styles/focus = SubResource("StyleBoxFlat_akr7a")
+text = "START"
+flat = true
+
+[node name="ButtoOPTIONS" type="Button" parent="."]
+layout_mode = 2
+offset_left = 650.0
+offset_top = 800.0
+offset_right = 1221.0
+offset_bottom = 1010.0
+focus_neighbor_left = NodePath("../ButtonQUIT")
+focus_neighbor_right = NodePath("../ButtonSTART")
+theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_k5aqp")
+theme_override_font_sizes/font_size = 150
+theme_override_styles/normal = SubResource("StyleBoxFlat_6wo0y")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mpqhj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pejs2")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_n2t0c")
+theme_override_styles/focus = SubResource("StyleBoxFlat_akr7a")
+text = "Settings"
+flat = true
+
+[node name="Settings" type="Control" parent="ButtoOPTIONS"]
+anchors_preset = 0
+offset_left = -679.0
+offset_top = -701.0
+offset_right = -639.0
+offset_bottom = -661.0
+script = ExtResource("7_modeh")
+
+[node name="Window" type="Window" parent="ButtoOPTIONS/Settings"]
+title = "Instructions"
+initial_position = 1
+size = Vector2i(500, 500)
+visible = false
+theme_override_colors/title_color = Color(0.545098, 0.47451, 0.227451, 1)
+theme_override_colors/title_outline_modulate = Color(0.545098, 0.47451, 0.227451, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ButtoOPTIONS/Settings/Window"]
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.395
+anchor_right = 0.125
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -64.0
+offset_right = -105.0
+offset_bottom = -290.0
+grow_vertical = 2
+
+[node name="Resolution" type="Label" parent="ButtoOPTIONS/Settings/Window/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.564706, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("3_k5aqp")
+theme_override_font_sizes/font_size = 50
+text = "Resolution"
+
+[node name="OptionButton" type="OptionButton" parent="ButtoOPTIONS/Settings/Window/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ButtoOPTIONS/Settings/Window"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -26.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.564706, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("3_k5aqp")
+theme_override_font_sizes/font_size = 50
+text = "  ENJOY THE GAME "
+
+[connection signal="pressed" from="ButtonQUIT" to="." method="_on_button_quit_pressed"]
+[connection signal="pressed" from="ButtonSTART" to="." method="_on_button_start_pressed"]
+[connection signal="pressed" from="ButtoOPTIONS" to="." method="_on_butto_options_pressed"]
+[connection signal="close_requested" from="ButtoOPTIONS/Settings/Window" to="." method="_on_window_close_requested"]
+[connection signal="item_selected" from="ButtoOPTIONS/Settings/Window/HBoxContainer/OptionButton" to="ButtoOPTIONS/Settings" method="_on_option_button_item_selected"]

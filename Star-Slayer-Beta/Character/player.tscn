@@ -1,0 +1,135 @@
+[gd_scene load_steps=5 format=3 uid="uid://dctt6qj850668"]
+
+[ext_resource type="Script" path="res://Character/Player.gd" id="1_ti8ab"]
+[ext_resource type="Texture2D" uid="uid://wcivpl0qlrj4" path="res://Assets/player_sprite_yellVIS_idle_fullSwing.png" id="2_b0dkg"]
+[ext_resource type="Texture2D" uid="uid://dcbm43rmeth2h" path="res://Assets/gridtiles3.png" id="3_4br4m"]
+[ext_resource type="Script" path="res://Character/Abilities.gd" id="3_r7hte"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_ti8ab")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_b0dkg")
+
+[node name="grid" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(32, 32)
+texture = ExtResource("3_4br4m")
+
+[node name="grid2" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(-480, 32)
+texture = ExtResource("3_4br4m")
+
+[node name="grid3" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(-992, 32)
+texture = ExtResource("3_4br4m")
+
+[node name="grid4" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(-992, -480)
+texture = ExtResource("3_4br4m")
+
+[node name="grid5" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(-480, -480)
+texture = ExtResource("3_4br4m")
+
+[node name="grid6" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(32, -480)
+texture = ExtResource("3_4br4m")
+
+[node name="grid7" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(544, -480)
+texture = ExtResource("3_4br4m")
+
+[node name="grid8" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(544, 32)
+texture = ExtResource("3_4br4m")
+
+[node name="grid9" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(1056, 32)
+texture = ExtResource("3_4br4m")
+
+[node name="grid10" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(1056, -480)
+texture = ExtResource("3_4br4m")
+
+[node name="grid11" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(1568, -480)
+texture = ExtResource("3_4br4m")
+
+[node name="grid12" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(1568, 32)
+texture = ExtResource("3_4br4m")
+
+[node name="grid13" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(1568, 544)
+texture = ExtResource("3_4br4m")
+
+[node name="grid14" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(1056, 544)
+texture = ExtResource("3_4br4m")
+
+[node name="grid15" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(544, 544)
+texture = ExtResource("3_4br4m")
+
+[node name="grid16" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(32, 544)
+texture = ExtResource("3_4br4m")
+
+[node name="grid17" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(-480, 544)
+texture = ExtResource("3_4br4m")
+
+[node name="grid18" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(-992, 544)
+texture = ExtResource("3_4br4m")
+
+[node name="grid19" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(-992, -992)
+texture = ExtResource("3_4br4m")
+
+[node name="grid20" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(-480, -992)
+texture = ExtResource("3_4br4m")
+
+[node name="grid21" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(32, -992)
+texture = ExtResource("3_4br4m")
+
+[node name="grid22" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(544, -992)
+texture = ExtResource("3_4br4m")
+
+[node name="grid23" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(1056, -992)
+texture = ExtResource("3_4br4m")
+
+[node name="grid24" type="Sprite2D" parent="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(1568, -992)
+texture = ExtResource("3_4br4m")
+
+[node name="Abilities" type="Node" parent="."]
+script = ExtResource("3_r7hte")

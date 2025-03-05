@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://dobpq5470hb4q"]
+
+[ext_resource type="Script" path="res://GUI/LifeBar.gd" id="1_ea8ct"]
+[ext_resource type="Texture2D" uid="uid://biryranxuba87" path="res://GUI/label_HP.png" id="2_8xomf"]
+[ext_resource type="Texture2D" uid="uid://bj4e42up3i0oo" path="res://GUI/lifebar_bg.png" id="3_qsgxo"]
+[ext_resource type="Texture2D" uid="uid://8mi60qg6sahy" path="res://GUI/lifebar_fill.png" id="4_s4tiy"]
+
+[node name="LifeBarControl" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ea8ct")
+
+[node name="LifeBar" type="HBoxContainer" parent="."]
+layout_mode = 2
+offset_right = 500.0
+offset_bottom = 53.0
+
+[node name="Title" type="TextureRect" parent="LifeBar"]
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 2
+texture = ExtResource("2_8xomf")
+stretch_mode = 3
+
+[node name="Number" type="Label" parent="LifeBar"]
+layout_mode = 2
+text = "10"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Count" type="MarginContainer" parent="LifeBar"]
+layout_mode = 2
+
+[node name="Gauge" type="TextureProgressBar" parent="LifeBar"]
+layout_mode = 2
+max_value = 5.0
+texture_under = ExtResource("3_qsgxo")
+texture_progress = ExtResource("4_s4tiy")

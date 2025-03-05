@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxl1i0r3rt56s"]
+
+[ext_resource type="Script" path="res://Mobs/enemy.gd" id="1_5fq66"]
+[ext_resource type="Texture2D" uid="uid://ckhfemqmcgx65" path="res://Assets/pixil-frame-0-2.png" id="2_8ecr3"]
+
+[node name="enemy" type="Area2D"]
+light_mask = 2
+visibility_layer = 2
+script = ExtResource("1_5fq66")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+texture = ExtResource("2_8ecr3")

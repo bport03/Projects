@@ -1,0 +1,16 @@
+AnimatedSprite2D
+Area2D
+Node
+Sprite2D
+Label
+Panel
+TextEdit
+OptionButton
+HBoxContainer
+Button
+VBoxContainer
+CanvasLayer
+Control
+TextureRect
+PanelContainer
+MarginContainer

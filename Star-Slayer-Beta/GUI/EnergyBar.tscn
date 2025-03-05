@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://rdpelvltq6hr"]
+
+[ext_resource type="Script" path="res://GUI/EnergyBar.gd" id="1_on6ww"]
+[ext_resource type="Texture2D" uid="uid://ciwqf2bw6wjxy" path="res://GUI/label_EP.png" id="2_rhjs5"]
+[ext_resource type="Texture2D" uid="uid://buo6ckdebanmu" path="res://GUI/energy_bar_bg.png" id="3_h5mjr"]
+[ext_resource type="Texture2D" uid="uid://bujbe6vucvtol" path="res://GUI/energy_bar_fill.png" id="4_2qgtq"]
+
+[node name="EnergyBarControl" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_on6ww")
+
+[node name="EnergyBar" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="TextureRect" parent="EnergyBar"]
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 2
+size_flags_vertical = 0
+texture = ExtResource("2_rhjs5")
+stretch_mode = 3
+
+[node name="Number" type="Label" parent="EnergyBar"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 0
+text = "10"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Count" type="MarginContainer" parent="EnergyBar"]
+layout_mode = 2
+
+[node name="Gauge" type="TextureProgressBar" parent="EnergyBar"]
+layout_mode = 2
+texture_under = ExtResource("3_h5mjr")
+texture_progress = ExtResource("4_2qgtq")

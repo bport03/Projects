@@ -1,0 +1,97 @@
+[gd_scene load_steps=11 format=3 uid="uid://dw4re53yq8esv"]
+
+[ext_resource type="Script" path="res://Main/pause_menu.gd" id="1_7aqmc"]
+[ext_resource type="Texture2D" uid="uid://da0igbc35rsfu" path="res://Assets/1587117862691.png" id="2_85uu4"]
+[ext_resource type="Texture2D" uid="uid://bwu10x4njpfhb" path="res://Assets/quit.png" id="3_0rjte"]
+[ext_resource type="FontFile" uid="uid://2jyn7mvk63m3" path="res://Assets/minecraft/Minecraft.ttf" id="4_p8k74"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vpd0x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0wyc6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fmofk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e75m5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nf2m7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nys6o"]
+
+[node name="PauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7aqmc")
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color(0.929412, 0, 0.635294, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1223.0
+offset_top = -661.0
+offset_right = 1050.0
+offset_bottom = 664.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -308.5
+offset_top = -406.5
+offset_right = 566.5
+offset_bottom = 233.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="resume" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vpd0x")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0wyc6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fmofk")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e75m5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nf2m7")
+icon = ExtResource("2_85uu4")
+
+[node name="quit" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nys6o")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nys6o")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nys6o")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nys6o")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nys6o")
+icon = ExtResource("3_0rjte")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 847.0
+offset_top = 926.0
+offset_right = 2024.0
+offset_bottom = 1080.0
+
+[node name="Resolution" type="Label" parent="Panel/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.666667, 0.0784314, 0.505882, 1)
+theme_override_colors/font_outline_color = Color(0.960784, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_p8k74")
+theme_override_font_sizes/font_size = 150
+text = "RESOLUTION"
+
+[node name="OptionButton" type="OptionButton" parent="Panel/HBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="Panel/VBoxContainer/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/quit" to="." method="_on_quit_pressed"]
+[connection signal="item_selected" from="Panel/HBoxContainer/OptionButton" to="." method="_on_option_button_item_selected"]

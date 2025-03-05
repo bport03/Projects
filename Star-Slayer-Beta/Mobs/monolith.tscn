@@ -1,0 +1,165 @@
+[gd_scene load_steps=32 format=3 uid="uid://dfeshw3b3g2yr"]
+
+[ext_resource type="Script" path="res://Mobs/monolith.gd" id="1_g4fvf"]
+[ext_resource type="Texture2D" uid="uid://d0msficomepxx" path="res://Assets/monolith/Monolith/Attack/m1.png" id="2_v4upc"]
+[ext_resource type="Texture2D" uid="uid://b86hv7fmbfoa3" path="res://Assets/monolith/Monolith/Attack/m2.png" id="3_oln45"]
+[ext_resource type="Texture2D" uid="uid://cyyr8xjhe8is6" path="res://Assets/monolith/Monolith/Attack/m3.png" id="4_uxn66"]
+[ext_resource type="Texture2D" uid="uid://bxbtg1olnmmb6" path="res://Assets/monolith/Monolith/Attack/m4.png" id="5_j5mlr"]
+[ext_resource type="Texture2D" uid="uid://c788387ljnexi" path="res://Assets/monolith/Monolith/Attack/m5.png" id="6_a4dqt"]
+[ext_resource type="Texture2D" uid="uid://da2xcufrd4hn0" path="res://Assets/monolith/Monolith/Attack/m6.png" id="7_5vh10"]
+[ext_resource type="Texture2D" uid="uid://434kywpwm2e6" path="res://Assets/monolith/Monolith/Attack/m7.png" id="8_ndohh"]
+[ext_resource type="Texture2D" uid="uid://bkaffgdigrkuy" path="res://Assets/monolith/Monolith/Attack/m8.png" id="9_7ug4n"]
+[ext_resource type="Texture2D" uid="uid://dkd57evw25ymo" path="res://Assets/monolith/Monolith/Attack/m9.png" id="10_ileea"]
+[ext_resource type="Texture2D" uid="uid://cycmtihnf0puf" path="res://Assets/monolith/Monolith/Attack/m10.png" id="11_ik7w5"]
+[ext_resource type="Texture2D" uid="uid://ddec6htdty2m1" path="res://Assets/monolith/Monolith/damaged/d1.png" id="12_8mxp1"]
+[ext_resource type="Texture2D" uid="uid://byprwwtul5rct" path="res://Assets/monolith/Monolith/damaged/d2.png" id="13_vioha"]
+[ext_resource type="Texture2D" uid="uid://elhquvvjqcb8" path="res://Assets/monolith/Monolith/damaged/d3.png" id="14_4ihs5"]
+[ext_resource type="Texture2D" uid="uid://c3llv1iq34r7p" path="res://Assets/monolith/Monolith/damaged/d4.png" id="15_8uspj"]
+[ext_resource type="Texture2D" uid="uid://djnb40uh0g0rk" path="res://Assets/monolith/Monolith/Death/monolith-1.png" id="18_nwlxr"]
+[ext_resource type="Texture2D" uid="uid://ckj85ab2ybof4" path="res://Assets/monolith/Monolith/Death/monolith-2.png" id="19_rk6cl"]
+[ext_resource type="Texture2D" uid="uid://dasfo0rqfblf5" path="res://Assets/monolith/Monolith/Death/monolith-3.png" id="20_aygne"]
+[ext_resource type="Texture2D" uid="uid://dck1om2u15tto" path="res://Assets/monolith/Monolith/Death/monolith-4.png" id="21_1u2qu"]
+[ext_resource type="Texture2D" uid="uid://cyj8441qbu4wn" path="res://Assets/monolith/Monolith/Death/monolith-5.png" id="22_b3kou"]
+[ext_resource type="Texture2D" uid="uid://cnaof4dv84cp1" path="res://Assets/monolith/Monolith/Death/monolith-6.png" id="23_1blle"]
+[ext_resource type="Texture2D" uid="uid://dfq8sydk2jo68" path="res://Assets/monolith/Monolith/Death/monolith-7.png" id="24_jdtf2"]
+[ext_resource type="Texture2D" uid="uid://ctbd1uel1v7v1" path="res://Assets/monolith/Monolith/Idle/monolith-pixilart_1.png" id="25_1ar38"]
+[ext_resource type="Texture2D" uid="uid://fhw6aeqq4mwf" path="res://Assets/health/ui/0-2.png" id="26_sv6xo"]
+[ext_resource type="Texture2D" uid="uid://pq20vqi2xah3" path="res://Assets/monolith/Monolith/Idle/monolith-pixilart_2.png" id="26_xgrif"]
+[ext_resource type="Script" path="res://Mobs/AnimatedSprite2D.gd" id="27_ycrp0"]
+[ext_resource type="Texture2D" uid="uid://dbvx4fqtrc6gm" path="res://Assets/health/ui/1-2.png" id="27_yn5tl"]
+[ext_resource type="Texture2D" uid="uid://vqfc4a2tvcw2" path="res://Assets/health/ui/2-2.png" id="28_onck1"]
+[ext_resource type="Script" path="res://Mobs/monolith_UI.gd" id="29_lqo1b"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dyebq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_v4upc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_oln45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_uxn66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_j5mlr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_a4dqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5vh10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ndohh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7ug4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ileea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ik7w5")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_8mxp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vioha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_4ihs5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_8uspj")
+}],
+"loop": false,
+"name": &"damaged",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_nwlxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_rk6cl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_aygne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_1u2qu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_b3kou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_1blle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_jdtf2")
+}],
+"loop": false,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_1ar38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_xgrif")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r5u5f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_sv6xo")
+}],
+"loop": true,
+"name": &"0_2",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_yn5tl")
+}],
+"loop": true,
+"name": &"1_2",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_onck1")
+}],
+"loop": true,
+"name": &"2_2",
+"speed": 0.0
+}]
+
+[node name="monolith" type="Area2D"]
+script = ExtResource("1_g4fvf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_dyebq")
+animation = &"damaged"
+script = ExtResource("27_ycrp0")
+
+[node name="UI" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r5u5f")
+animation = &"2_2"
+script = ExtResource("29_lqo1b")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

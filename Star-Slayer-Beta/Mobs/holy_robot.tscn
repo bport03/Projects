@@ -1,0 +1,255 @@
+[gd_scene load_steps=40 format=3 uid="uid://bcodoyj88ub4r"]
+
+[ext_resource type="Texture2D" uid="uid://devw3qre0ji4" path="res://Assets/holy_robot/HolyRobot/Attack/1.png" id="2_0v21c"]
+[ext_resource type="Script" path="res://Mobs/AnimatedSprite2D.gd" id="2_82oc8"]
+[ext_resource type="Texture2D" uid="uid://bmcfci4qgymdt" path="res://Assets/holy_robot/HolyRobot/Attack/2.png" id="3_ajc4y"]
+[ext_resource type="Texture2D" uid="uid://cx58sj1q2wmr2" path="res://Assets/holy_robot/HolyRobot/Attack/3.png" id="4_ophow"]
+[ext_resource type="Texture2D" uid="uid://dlanleptedetg" path="res://Assets/holy_robot/HolyRobot/Attack/4.png" id="5_0pj6y"]
+[ext_resource type="Texture2D" uid="uid://ck1yrfqqru8r" path="res://Assets/holy_robot/HolyRobot/Attack/5.png" id="6_2cu02"]
+[ext_resource type="Texture2D" uid="uid://dgdle5f73tmui" path="res://Assets/holy_robot/HolyRobot/Attack/6.png" id="7_8tu61"]
+[ext_resource type="Texture2D" uid="uid://bujn8vcxsrgu1" path="res://Assets/holy_robot/HolyRobot/Attack/7.png" id="8_ij0jm"]
+[ext_resource type="Texture2D" uid="uid://byg0ht55kvlub" path="res://Assets/holy_robot/HolyRobot/Attack/8.png" id="9_o657y"]
+[ext_resource type="Texture2D" uid="uid://cj5618ipkmbqp" path="res://Assets/holy_robot/HolyRobot/Attack/9.png" id="10_cmfle"]
+[ext_resource type="Texture2D" uid="uid://doycuglngu404" path="res://Assets/holy_robot/HolyRobot/Attack/10.png" id="11_v0y6t"]
+[ext_resource type="Texture2D" uid="uid://dt562i2gicu7f" path="res://Assets/holy_robot/HolyRobot/Attack/11.png" id="12_4wjkc"]
+[ext_resource type="Texture2D" uid="uid://bm03dqh7mwdag" path="res://Assets/holy_robot/HolyRobot/Attack/12.png" id="13_lrmbb"]
+[ext_resource type="Texture2D" uid="uid://dvhsx6kv3kkcm" path="res://Assets/holy_robot/HolyRobot/Damaged/1.png" id="14_tkmuw"]
+[ext_resource type="Texture2D" uid="uid://2vgcpv8c056q" path="res://Assets/holy_robot/HolyRobot/Damaged/2.png" id="15_nkwmj"]
+[ext_resource type="Texture2D" uid="uid://di422c0r61chs" path="res://Assets/holy_robot/HolyRobot/Damaged/3.png" id="16_b3jbo"]
+[ext_resource type="Texture2D" uid="uid://ckxn87nf5l602" path="res://Assets/holy_robot/HolyRobot/Damaged/4.png" id="17_2wpgf"]
+[ext_resource type="Texture2D" uid="uid://c3cx2grtc4mk6" path="res://Assets/holy_robot/HolyRobot/Damaged/5.png" id="18_mdpg6"]
+[ext_resource type="Texture2D" uid="uid://bpkktotffwn1i" path="res://Assets/holy_robot/HolyRobot/Death/1.png" id="19_v4hf3"]
+[ext_resource type="Texture2D" uid="uid://bmaia5cjveb15" path="res://Assets/holy_robot/HolyRobot/Death/2.png" id="20_k71wy"]
+[ext_resource type="Texture2D" uid="uid://b1latxmehayel" path="res://Assets/holy_robot/HolyRobot/Death/3.png" id="21_4hobr"]
+[ext_resource type="Texture2D" uid="uid://barbo6s6hpp6r" path="res://Assets/holy_robot/HolyRobot/Death/4.png" id="22_djgr4"]
+[ext_resource type="Texture2D" uid="uid://cr6wtffn7llq6" path="res://Assets/holy_robot/HolyRobot/Death/5.png" id="23_wggt5"]
+[ext_resource type="Texture2D" uid="uid://di4c7hieefyqb" path="res://Assets/holy_robot/HolyRobot/Death/6.png" id="24_ld1n5"]
+[ext_resource type="Texture2D" uid="uid://c4blswil82tac" path="res://Assets/holy_robot/HolyRobot/Death/7.png" id="25_y1gw3"]
+[ext_resource type="Texture2D" uid="uid://bavyt00rapo33" path="res://Assets/holy_robot/HolyRobot/Idle/1.png" id="26_ohf45"]
+[ext_resource type="Texture2D" uid="uid://cn0ntisbl0nyy" path="res://Assets/holy_robot/HolyRobot/Idle/2.png" id="27_nxhu4"]
+[ext_resource type="Texture2D" uid="uid://cruoftr8v7rhl" path="res://Assets/holy_robot/HolyRobot/Idle/3.png" id="28_mawul"]
+[ext_resource type="Texture2D" uid="uid://btes0u3a3j7s3" path="res://Assets/holy_robot/HolyRobot/Idle/4.png" id="29_xknus"]
+[ext_resource type="Texture2D" uid="uid://cxq8uttbj02qh" path="res://Assets/holy_robot/HolyRobot/Idle/5.png" id="30_qr2it"]
+[ext_resource type="Texture2D" uid="uid://bcc41t8d5qfw6" path="res://Assets/holy_robot/HolyRobot/Idle/6.png" id="31_8xbn5"]
+[ext_resource type="Texture2D" uid="uid://ddafiuyppf5ph" path="res://Assets/holy_robot/HolyRobot/Idle/7.png" id="32_8emiq"]
+[ext_resource type="Texture2D" uid="uid://fhw6aeqq4mwf" path="res://Assets/health/ui/0-2.png" id="33_1fmtc"]
+[ext_resource type="Texture2D" uid="uid://dbvx4fqtrc6gm" path="res://Assets/health/ui/1-2.png" id="34_vipt0"]
+[ext_resource type="Texture2D" uid="uid://vqfc4a2tvcw2" path="res://Assets/health/ui/2-2.png" id="35_xaifl"]
+[ext_resource type="Script" path="res://Mobs/holy_robot_UI.gd" id="36_2rko7"]
+
+[sub_resource type="GDScript" id="GDScript_idjfo"]
+script/source = "extends Area2D
+
+# Signal that is emitted upon movement that signifies the new postions of the enemy
+signal action_taken(old_position, new_position, entity_id)
+
+# variable to keep track of turn
+var turn_status = false
+
+# the enmies entity ID
+var entity_ID = 0
+# keeps track of old position so we can correctly update gameboard
+var old_current_enemy_position = null
+# holds the parent so we can use functions in main
+var parent = get_parent()
+# holds the new position we will move to
+var new_position = null
+# variable for heath
+var health = 2
+
+# variable to hold flag for enemy dying
+var dying = false
+
+# updates the enemy health UI
+func update_health():
+	get_node(\"UI\").update_health(health)
+
+# pass through function to set an animation
+func play_animation(animation_name):
+	get_node(\"AnimatedSprite2D\").play_animation(animation_name)
+	
+	
+# move the enemy
+func move_enemy():
+	# if it's their turn (NOTE THIS IS JUST TO ENSURE CORRECT BEHAVIOR)
+	if turn_status:
+		# keep track of old enemy position
+		old_current_enemy_position = new_position
+		# get spot to move to
+		new_position = get_parent().get_enemy_move(self)
+		# if a spot was found
+		if new_position != null:
+			# move their
+			self.position = new_position
+			emit_signal(\"action_taken\", old_current_enemy_position, self, new_position)
+		else:
+			#print(\"skipped move\")
+			pass
+
+		
+# on signal of animation finished if not dying set animation back to idle otherwise free enemy	
+func _on_animated_sprite_2d_animation_finished():
+	if not dying:
+		play_animation(\"idle\")
+	else:
+		queue_free()
+
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_damdu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0v21c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ajc4y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ophow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0pj6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2cu02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8tu61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ij0jm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_o657y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_cmfle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_v0y6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4wjkc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_lrmbb")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_tkmuw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_nkwmj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_b3jbo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_2wpgf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_mdpg6")
+}],
+"loop": false,
+"name": &"damaged",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_v4hf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_k71wy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_4hobr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_djgr4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_wggt5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ld1n5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_y1gw3")
+}],
+"loop": false,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_ohf45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_nxhu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_mawul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_xknus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_qr2it")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_8xbn5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_8emiq")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qh4v7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_1fmtc")
+}],
+"loop": true,
+"name": &"0_2",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_vipt0")
+}],
+"loop": true,
+"name": &"1_2",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_xaifl")
+}],
+"loop": true,
+"name": &"2_2",
+"speed": 0.0
+}]
+
+[node name="holy_robot" type="Area2D"]
+script = SubResource("GDScript_idjfo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_damdu")
+animation = &"attack"
+script = ExtResource("2_82oc8")
+
+[node name="UI" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qh4v7")
+animation = &"2_2"
+script = ExtResource("36_2rko7")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

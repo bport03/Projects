@@ -1,0 +1,186 @@
+[gd_scene load_steps=36 format=3 uid="uid://b504jp8wpdbxp"]
+
+[ext_resource type="Texture2D" uid="uid://48jjijgm16nf" path="res://Assets/robo_agent/robo_agent/attack/1_attack_robo_agent.png" id="1_54tyo"]
+[ext_resource type="Script" path="res://Mobs/robo_agent.gd" id="1_aqkgr"]
+[ext_resource type="Texture2D" uid="uid://ba1uboktg2mos" path="res://Assets/robo_agent/robo_agent/attack/2_attack_robo_agent.png" id="2_ya8je"]
+[ext_resource type="Texture2D" uid="uid://bndriocq5yo" path="res://Assets/robo_agent/robo_agent/attack/3_attack_robo_aget.png" id="3_qrq1l"]
+[ext_resource type="Texture2D" uid="uid://b0ubnjybh1sjc" path="res://Assets/robo_agent/robo_agent/attack/4_attack_robo_agent.png" id="4_r66nb"]
+[ext_resource type="Texture2D" uid="uid://l18fm3hu4rjc" path="res://Assets/robo_agent/robo_agent/attack/5_attack_robo_agent.png" id="5_fbldi"]
+[ext_resource type="Texture2D" uid="uid://bs17p8abfolog" path="res://Assets/robo_agent/robo_agent/attack/6_attack_robo_agent.png" id="6_op74c"]
+[ext_resource type="Texture2D" uid="uid://8p4ajgvcs2ar" path="res://Assets/robo_agent/robo_agent/attack/7_attack_robo_agent.png" id="7_spqfg"]
+[ext_resource type="Texture2D" uid="uid://du8m5hu5myeki" path="res://Assets/robo_agent/robo_agent/attack/8_attack_robo_agent.png" id="8_57iyr"]
+[ext_resource type="Texture2D" uid="uid://dit13db5u30e8" path="res://Assets/robo_agent/robo_agent/damage/1_damage_robo_agent.png" id="9_expde"]
+[ext_resource type="Texture2D" uid="uid://c3lod5joy5g1v" path="res://Assets/robo_agent/robo_agent/damage/2_damage_robo_agent.png" id="10_1iuay"]
+[ext_resource type="Texture2D" uid="uid://dkqvpcjfgft02" path="res://Assets/robo_agent/robo_agent/damage/3_damage_robo_agent.png" id="11_61a1k"]
+[ext_resource type="Texture2D" uid="uid://bvx4qtl571rs8" path="res://Assets/robo_agent/robo_agent/damage/4_damage_robo_agent.png" id="12_edwiu"]
+[ext_resource type="Texture2D" uid="uid://c8c0cbg01pmuy" path="res://Assets/robo_agent/robo_agent/die/1_die_robo_agent.png" id="13_oam85"]
+[ext_resource type="Texture2D" uid="uid://lhhw6gd0tqrc" path="res://Assets/robo_agent/robo_agent/die/2_die_robo_agent.png" id="14_rswha"]
+[ext_resource type="Texture2D" uid="uid://owxl7x8n6eik" path="res://Assets/robo_agent/robo_agent/die/3_die_robo_agent.png" id="15_fjg5d"]
+[ext_resource type="Texture2D" uid="uid://blpwpscrhpmxd" path="res://Assets/robo_agent/robo_agent/die/4_die_robo_agent.png" id="16_mgbw3"]
+[ext_resource type="Texture2D" uid="uid://cqd4t1rk5gao1" path="res://Assets/robo_agent/robo_agent/die/5_die_robo_agent.png" id="17_ai5du"]
+[ext_resource type="Texture2D" uid="uid://dehhvouec8o1d" path="res://Assets/robo_agent/robo_agent/die/6_die_robo_agent.png" id="18_o4baj"]
+[ext_resource type="Texture2D" uid="uid://bvb0tfjhifchu" path="res://Assets/robo_agent/robo_agent/die/7_die_robo_agent.png" id="19_gao60"]
+[ext_resource type="Texture2D" uid="uid://dwki0pks0q3ol" path="res://Assets/robo_agent/robo_agent/die/8_die_robo_agent.png" id="20_pllsm"]
+[ext_resource type="Texture2D" uid="uid://c75p0lxxfsfkw" path="res://Assets/robo_agent/robo_agent/die/9_die_robo_agent.png" id="21_tnhom"]
+[ext_resource type="Texture2D" uid="uid://dgpoqfjp52y3l" path="res://Assets/robo_agent/robo_agent/die/10_die_robo_agent.png" id="22_bu8hi"]
+[ext_resource type="Texture2D" uid="uid://b3fqig6so14i8" path="res://Assets/robo_agent/robo_agent/die/11_die_robo_agent.png" id="23_otw0v"]
+[ext_resource type="Texture2D" uid="uid://gxcumyvhv4ek" path="res://Assets/robo_agent/robo_agent/die/12_die_robo_agent.png" id="24_2cyd7"]
+[ext_resource type="Texture2D" uid="uid://b2kj1mx73yxsv" path="res://Assets/robo_agent/robo_agent/die/13_die_robo_agent.png" id="25_0utpp"]
+[ext_resource type="Texture2D" uid="uid://cwx4ygua8p4r0" path="res://Assets/robo_agent/robo_agent/idle_robo_agent.png" id="26_lkg38"]
+[ext_resource type="Script" path="res://Mobs/AnimatedSprite2D.gd" id="27_dejfj"]
+[ext_resource type="Texture2D" uid="uid://cr3533rporvg4" path="res://Assets/health/ui/0-3.png" id="29_v1trd"]
+[ext_resource type="Texture2D" uid="uid://yxlt21wc78px" path="res://Assets/health/ui/1-3.png" id="30_ae0fo"]
+[ext_resource type="Texture2D" uid="uid://cm27umqk7b4fp" path="res://Assets/health/ui/2-3.png" id="31_mhy0x"]
+[ext_resource type="Texture2D" uid="uid://cin4tj7vsipem" path="res://Assets/health/ui/3-3.png" id="32_3mr2d"]
+[ext_resource type="Script" path="res://Mobs/robo_agent_UI.gd" id="33_uxyvs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_twnyv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_54tyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ya8je")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qrq1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_r66nb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fbldi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_op74c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_spqfg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_57iyr")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_expde")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1iuay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_61a1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_edwiu")
+}],
+"loop": false,
+"name": &"damaged",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_oam85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_rswha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_fjg5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_mgbw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ai5du")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_o4baj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_gao60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_pllsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_tnhom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_bu8hi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_otw0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_2cyd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_0utpp")
+}],
+"loop": false,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_lkg38")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gds6v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_v1trd")
+}],
+"loop": true,
+"name": &"0_3",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_ae0fo")
+}],
+"loop": true,
+"name": &"1_3",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_mhy0x")
+}],
+"loop": true,
+"name": &"2_3",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_3mr2d")
+}],
+"loop": true,
+"name": &"3_3",
+"speed": 0.0
+}]
+
+[node name="robo_agent" type="Area2D"]
+script = ExtResource("1_aqkgr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_twnyv")
+animation = &"idle"
+script = ExtResource("27_dejfj")
+
+[node name="UI" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_gds6v")
+animation = &"3_3"
+script = ExtResource("33_uxyvs")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

@@ -1,0 +1,247 @@
+[gd_scene load_steps=45 format=3 uid="uid://dphp4yfe1k4qa"]
+
+[ext_resource type="Script" path="res://Mobs/orb.gd" id="1_ydvn6"]
+[ext_resource type="Texture2D" uid="uid://bjqlawg017r56" path="res://Assets/orb/Attack/orb1.png" id="2_uyif3"]
+[ext_resource type="Script" path="res://Mobs/AnimatedSprite2D.gd" id="2_woylh"]
+[ext_resource type="Texture2D" uid="uid://nhocknlpfvkx" path="res://Assets/health/ui/0-8.png" id="3_lfsi4"]
+[ext_resource type="Script" path="res://Mobs/UI.gd" id="3_xf78x"]
+[ext_resource type="Texture2D" uid="uid://dmsc8eduh37b8" path="res://Assets/orb/Attack/orb2.png" id="3_xrxey"]
+[ext_resource type="Texture2D" uid="uid://cb1adnvsvhw62" path="res://Assets/health/ui/1-8.png" id="4_cum5w"]
+[ext_resource type="Texture2D" uid="uid://b7v62mldvosxt" path="res://Assets/orb/Attack/orb3.png" id="4_oinrp"]
+[ext_resource type="Texture2D" uid="uid://bybd4g08tpor3" path="res://Assets/orb/Attack/orb4.png" id="5_cv01i"]
+[ext_resource type="Texture2D" uid="uid://djgwdo48tr65b" path="res://Assets/health/ui/2-8.png" id="5_lh260"]
+[ext_resource type="Texture2D" uid="uid://bllx8gjhbo3t8" path="res://Assets/health/ui/3-8.png" id="6_7j3h3"]
+[ext_resource type="Texture2D" uid="uid://b63t78o6vrrax" path="res://Assets/orb/Attack/orb5.png" id="6_e4bb8"]
+[ext_resource type="Texture2D" uid="uid://d1g2hbgbwf7jv" path="res://Assets/orb/Attack/orb6.png" id="7_fh38j"]
+[ext_resource type="Texture2D" uid="uid://g1on36ml7lcf" path="res://Assets/health/ui/4-8.png" id="7_xgmtv"]
+[ext_resource type="Texture2D" uid="uid://ck3obebx8088k" path="res://Assets/health/ui/5-8.png" id="8_gkskj"]
+[ext_resource type="Texture2D" uid="uid://duvskhlkekotm" path="res://Assets/orb/Attack/orb7.png" id="8_o4ov6"]
+[ext_resource type="Texture2D" uid="uid://do0kg4br0wncx" path="res://Assets/health/ui/6-8.png" id="9_kra4o"]
+[ext_resource type="Texture2D" uid="uid://ca7egwt04j22r" path="res://Assets/orb/Attack/orb8.png" id="9_l6lqo"]
+[ext_resource type="Texture2D" uid="uid://ve5ix2u4qt32" path="res://Assets/orb/Attack/orb9.png" id="10_joxrp"]
+[ext_resource type="Texture2D" uid="uid://d07pjsqyucq68" path="res://Assets/health/ui/7-8.png" id="10_pus43"]
+[ext_resource type="Texture2D" uid="uid://qdf70e4p40i8" path="res://Assets/health/ui/8-8.png" id="11_psjwq"]
+[ext_resource type="Texture2D" uid="uid://cogcd132fud5j" path="res://Assets/orb/Attack/orb10.png" id="11_xac4t"]
+[ext_resource type="Texture2D" uid="uid://bpcjl05urfrey" path="res://Assets/orb/Damaged/d1.png" id="12_n17no"]
+[ext_resource type="Texture2D" uid="uid://nvcukve2jvx8" path="res://Assets/orb/Damaged/d2.png" id="13_fnv5j"]
+[ext_resource type="Texture2D" uid="uid://ep408ptcojj7" path="res://Assets/orb/Damaged/d3.png" id="14_xflq1"]
+[ext_resource type="Texture2D" uid="uid://ypuhye2q1f2x" path="res://Assets/orb/Damaged/d4.png" id="15_rk011"]
+[ext_resource type="Texture2D" uid="uid://b2qilflsyjc4g" path="res://Assets/orb/Death/death1.png" id="16_tqkdx"]
+[ext_resource type="Texture2D" uid="uid://dgpg0xqx7lfof" path="res://Assets/orb/Death/death2.png" id="17_1r0vt"]
+[ext_resource type="Texture2D" uid="uid://dslv2olobvoih" path="res://Assets/orb/Death/death3.png" id="18_gus0b"]
+[ext_resource type="Texture2D" uid="uid://bpupaqlc6tdvy" path="res://Assets/orb/Death/death4.png" id="19_cgvip"]
+[ext_resource type="Texture2D" uid="uid://buydt4ff5rktr" path="res://Assets/orb/Death/death5.png" id="20_i13n3"]
+[ext_resource type="Texture2D" uid="uid://cmyw4ui0gles8" path="res://Assets/orb/Death/death6.png" id="21_t6l4u"]
+[ext_resource type="Texture2D" uid="uid://j7ap61urmfvb" path="res://Assets/orb/Death/death7.png" id="22_6f607"]
+[ext_resource type="Texture2D" uid="uid://c0ddk7ajeifxl" path="res://Assets/orb/Idle_Anim/d1.png" id="23_xudrn"]
+[ext_resource type="Texture2D" uid="uid://u37y0y5kdiyh" path="res://Assets/orb/Idle_Anim/d2.png" id="24_0lflh"]
+[ext_resource type="Texture2D" uid="uid://durjvsdn0hv7c" path="res://Assets/orb/Idle_Anim/d3.png" id="25_twbk4"]
+[ext_resource type="Texture2D" uid="uid://dw2kh1rh5bfdu" path="res://Assets/orb/Idle_Anim/d4.png" id="26_sp2no"]
+[ext_resource type="Texture2D" uid="uid://c7c24lkrq38ww" path="res://Assets/orb/Idle_Anim/d5.png" id="27_gdks5"]
+[ext_resource type="Texture2D" uid="uid://cbpv8uv628u5l" path="res://Assets/orb/Idle_Anim/d6.png" id="28_nv2w2"]
+[ext_resource type="Texture2D" uid="uid://ddfi2pw3y85pp" path="res://Assets/orb/Idle_Anim/d7.png" id="29_cgllc"]
+[ext_resource type="Texture2D" uid="uid://cipd8af5qmked" path="res://Assets/orb/Idle_Anim/d8.png" id="30_lshj4"]
+[ext_resource type="Texture2D" uid="uid://ui0cj2g2gouq" path="res://Assets/orb/Idle_Anim/d9.png" id="31_cvuv5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x1qni"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_uyif3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xrxey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_oinrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cv01i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_e4bb8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fh38j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_o4ov6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_l6lqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_joxrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_xac4t")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_n17no")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_fnv5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_xflq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_rk011")
+}],
+"loop": false,
+"name": &"damaged",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_tqkdx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_1r0vt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_gus0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_cgvip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_i13n3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_t6l4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6f607")
+}],
+"loop": false,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_xudrn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_0lflh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_twbk4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_sp2no")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_gdks5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_nv2w2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_cgllc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_lshj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_cvuv5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_78jp4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_lfsi4")
+}],
+"loop": true,
+"name": &"0_8",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_cum5w")
+}],
+"loop": true,
+"name": &"1_8",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_lh260")
+}],
+"loop": true,
+"name": &"2_8",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_7j3h3")
+}],
+"loop": true,
+"name": &"3_8",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_xgmtv")
+}],
+"loop": true,
+"name": &"4_8",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_gkskj")
+}],
+"loop": true,
+"name": &"5_8",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_kra4o")
+}],
+"loop": true,
+"name": &"6_8",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_pus43")
+}],
+"loop": true,
+"name": &"7_8",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_psjwq")
+}],
+"loop": true,
+"name": &"8_8",
+"speed": 0.0
+}]
+
+[node name="orb" type="Area2D"]
+script = ExtResource("1_ydvn6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_x1qni")
+animation = &"idle"
+script = ExtResource("2_woylh")
+
+[node name="UI" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_78jp4")
+animation = &"0_8"
+script = ExtResource("3_xf78x")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

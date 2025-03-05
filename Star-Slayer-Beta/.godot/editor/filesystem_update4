@@ -1,0 +1,14 @@
+res://Menu/menu.tscn
+res://inventory/inventory.gd
+res://inventory/inventoryItem.gd
+res://inventory_gui.gd
+res://Main/main.tscn
+res://Mobs/monolith.tscn
+res://Mobs/holy_robot.tscn
+res://Mobs/hover_bot.tscn
+res://Mobs/robo_agent.tscn
+res://Mobs/demon_guy.tscn
+res://Mobs/buba_beam.tscn
+res://Mobs/orb.tscn
+res://animated_sprite_2d.tscn
+res://Character/player.tscn
