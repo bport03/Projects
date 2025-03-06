@@ -7,3 +7,5 @@ Shell is a command shell prompt base in C
 
 
 Tretis  python game.
+
+The Star-Slayer-Beta requiered to download Godot engine in order to run the application 
