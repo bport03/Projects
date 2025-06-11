@@ -28,8 +28,7 @@ Updates the operator when a new one is found
 
 How to Compile and Run
 
-gcc -o calculator calculator.c
-./calculator
+Make run 
 
 Example Usage
 
@@ -57,10 +56,5 @@ Support negative numbers
 
 Add more mathematical operations (exponents, modulo, etc.)
 
-Author
-
-Brandon Portillo
-
-This project is a part of Brandon's self-paced journey to mastering C/C++ and preparing for advanced computing systems coursework at Georgia Tech OMSCS.
 
 
