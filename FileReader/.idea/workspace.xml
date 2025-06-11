@@ -24,9 +24,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ee2e4d8-365a-467b-bfdb-01cf50ba7468" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../C/Basic-Calculator " beforeDir="false" />
-    </list>
+    <list default="true" id="4ee2e4d8-365a-467b-bfdb-01cf50ba7468" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -792,7 +790,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749666623997</updated>
-      <workItem from="1749666626355" duration="7297000" />
+      <workItem from="1749666626355" duration="7655000" />
     </task>
     <servers />
   </component>
