@@ -1,8 +1,10 @@
-The anticipated user profile assumes individuals who possess certain fundamental computer skills, including the ability to initiate software programs, comprehend and follow instructions, and navigate through computer interfaces. Access to a computer with an internet connection is essential for using this application, and a basic understanding of technology is expected since the application is computer-based.
+# Employee Manager (Java GUI)
 
-The majority of users are expected to fall within the 18 to 50 age range and are predominantly residents of urban areas, often belonging to the working-class demographic. This user group typically has prior experience with mobile phones and technology, which should facilitate their ease of use when interacting with the application. Additionally, these users will have received login credentials from their employers to access the application.
+## How to Compile and Run
 
+```bash
+# Compile all .java files
+javac src/*.java
 
-
-
-To run Employee Manager download file, run javac Main.java java Main Login windown would appear manager as username and user as password to start creating employees and go from there.
+# Run the application
+java -cp src Main
