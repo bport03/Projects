@@ -1,77 +1,51 @@
-📂 Portfolio Projects
+# Programming Portfolio
 
-Welcome to my programming portfolio! Below is a categorized list of projects I've built, organized by language. Each project includes a brief overview and instructions for running it.
+Welcome to my programming portfolio! This collection includes a variety of projects I've developed across multiple programming languages, showcasing different skills and technologies.
 
-🧠 C Projects
+## Featured Projects
 
-🔹 Basic Calculator
+### Employee Manager (Java)
+A comprehensive desktop GUI application for managing employees.  
+- Secure login system (Username: `manager`, Password: `user`)  
+- Intuitive interface for adding, editing, and managing employee data  
+- Built with Java Swing, emphasizing application structure and event-driven programming  
 
-A command-line calculator that supports:
+### Star Slayer Beta (Godot)  
+A 2D space shooter prototype created using the Godot Engine.  
+- Engaging gameplay mechanics and controls  
+- Exploration of game development principles and design  
+- Utilizes Godot’s scene system and scripting for smooth gameplay  
 
-Multi-digit and floating-point input
+These two represent my largest and most in-depth projects, combining both technical complexity and practical application.
 
-Operators: +, -, *, /
+## Other Projects
 
-Division-by-zero error handling
+While smaller in scope, these projects helped me solidify foundational programming concepts and build useful tools:
 
-To run:
+### C Projects
 
-gcc main.c -o calculator
+- **Basic Calculator**  
+A command-line calculator supporting multi-digit and floating-point input, with operators +, -, *, /, including division-by-zero handling.  
 
-or Make run 
+- **Shell**  
+A simple custom shell implementing basic Unix commands (`cd`, `ls`, `exit`), with command parsing and a minimal terminal interface.  
 
-🔹 Shell
+### Python Projects
 
-A custom shell written in C that supports:
+- **Tretis**  
+A Tetris-inspired game built with Python’s `pygame` module for learning game logic and event handling.
 
-Basic Unix commands (cd, ls, exit, etc.)
+---
 
-Command parsing
+## How to Run Projects
 
-Minimal user interface for terminal navigation
-
-To run:
-
-gcc shell.c -o shell
-./shell
-
-make run 
-
-☕ Java Projects
-
-🔹 Employee Manager
-
-A desktop GUI application for managing employees.
-
-Login:
-
-Username: manager
-
-Password: user
-
-To run:
-
+### Employee Manager
 javac Main.java
 java Main
 
-🐍 Python Projects
 
-🔹 Tretis
-
-A simple Tetris-like game built using Python's pygame module.
-
-To run:
-
-pip install pygame
-python tretis.py
-
-🎮 Godot Projects
-
-🔹 Star Slayer Beta
-
-A 2D space shooter prototype developed using the Godot Engine.
-
-To run:
+### Godot Project
+Star Slayer Beta
 
 Download and install Godot Engine
 
