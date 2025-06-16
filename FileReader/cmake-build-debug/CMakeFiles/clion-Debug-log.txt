@@ -1,1 +1,0 @@
-CMakeLists.txt not found in /Users/brandonp/CLionProjects/Path 1/FileReader Select CMakeLists.txt
