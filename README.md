@@ -41,7 +41,7 @@ A Tetris-inspired game built with Python’s `pygame` module for learning game l
 
 ### Employee Manager
 
-Takes you directly to the Employee Manager folder. [[https://github.com/bport03/Projects/blob/main/Employee-Manager-Java/ReadMe.md](https://github.com/bport03/Projects/blob/main/Employee-Manager-Java/ReadMe.md)](https://github.com/bport03/Projects/tree/main/Employee-Manager-Java)
+Takes you directly to the Employee Manager folder. [[[[https://github.com/bport03/Projects/blob/main/Employee-Manager-Java/ReadMe.md]](https://github.com/bport03/Projects/tree/main/Employee-Manager-Java#readme)(https://github.com/bport03/Projects/blob/main/Employee-Manager-Java/ReadMe.md)](https://github.com/bport03/Projects/tree/main/Employee-Manager-Java)](https://github.com/bport03/Projects/tree/main/Employee-Manager-Java#readme)
 
 
 ### Star Slayer Beta
