@@ -3,6 +3,14 @@
 This project is a **Java Swing-based desktop application**. Follow these simple steps to **compile and run** it from your terminal or command prompt.
 
 ---
+Description:
+This project is an employee scheduler application with a GUI. To run the program, use the following login credentials:
+
+Username: manager
+
+Password: user
+
+The application allows you to manage employees, create schedules, and saves all data locally.
 
 ## 🛠️ **Prerequisites**
 
