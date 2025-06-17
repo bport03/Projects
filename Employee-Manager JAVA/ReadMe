@@ -1,10 +1,11 @@
-# Employee Manager (Java GUI)
+# 🧑‍💼 Employee Manager - Java GUI Application
 
-## How to Compile and Run
+A Java-based desktop GUI application for managing employees, schedules, messages, and requests.  
+This project provides a lightweight personnel management system with features such as employee login, schedule editing, and message handling.
 
-```bash
-# Compile all .java files
-javac src/*.java
+---
 
-# Run the application
-java -cp src Main
+## 📁 Project Structure
+
+
+
