@@ -45,7 +45,6 @@ Takes you directly to the Employee Manager folder.
 
 https://github.com/bport03/Projects/blob/main/Employee-Manager-Java/src/ReadMe.md
 
-
 ### Star Slayer Beta
 Download and install Godot Engine
 
