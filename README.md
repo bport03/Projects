@@ -44,7 +44,7 @@ A Tetris-inspired game built with Python’s `pygame` module for learning game l
 Takes you directly to the Employee Manager folder. 
 
 [[javac Main.java
-java Main](https://github.com/bport03/Projects/tree/main/Employee-Manager%20JAVA#%EF%B8%8F-prerequisites)](https://github.com/bport03/Projects/blob/main/Employee-Manager-Java/src/ReadMe.md)
+java Main]
 
 ### Star Slayer Beta
 Download and install Godot Engine
